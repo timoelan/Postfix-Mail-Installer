@@ -18,8 +18,8 @@ sudo debconf-set-selections <<< "postfix postfix/mailname string $(hostname)"
 # -------------------------------
 # 3. Gmail-Anmeldedaten setzen
 # -------------------------------
-GMAIL_USER="DEINE-EMAIL"  # Hier deine Gmail-Adresse eintragen
-GMAIL_PASS="DEIN-APP-PASSWORT"  # Hier das App-spezifische Passwort eintragen
+read -p "Enter your Email: " GMAIL_USER
+read -p "Enter your App-specific Password: " GMAIL_PASS
 
 # -------------------------------
 # 4. SASL-Datei erstellen und konfigurieren
